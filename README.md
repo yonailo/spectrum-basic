@@ -68,7 +68,10 @@ Vous remarquerez que #1 affiche dans la partie basse de l'écran, permettant l'u
 Les ordinateurs Sinclair ZX sont probablement les seuls à ne pouvoir exécuter une instruction INPUT qu'en bas de l'écran ; cependant, en utilisant les instructions PRINT AT, il est possible d'obtenir une entrée en un point quelconque de l'écran :
 
 ```basic
-INPUT AT 22,0; AT 0,0;"Quel est votre nom ";LINE a$; AT 10,0;"Quel est votre age ";(a$);" ";a; AT 15,0; "L'age de ";(a$);" est ";a; AT 20,0;"Tapez ENTER pour continuer";b$
+INPUT AT 22,0; AT 0,0;"Quel est votre nom ";LINE a$; 
+AT 10,0;"Quel est votre age ";(a$);" ";a; 
+AT 15,0; "L'age de ";(a$);" est ";a; 
+AT 20,0;"Tapez ENTER pour continuer";b$
 ```
 
 Cette méthode présente plusieurs inconvénients. Comme vouz pouvez le constater, la longueur des lignes pose un problème. D'autre part, la couleur du pourtour de l'écran (BORDER) doit être la même que celle du centre (PAPER) car la partie inférieur de l'écran est étendue à la presque totalitéde celui-ci. Presque seulement car une bande reste visible à l'extrémité supérieur, à moins que BORDER et PAPER n'aient la même valeur.
