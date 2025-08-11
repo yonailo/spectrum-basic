@@ -1,5 +1,94 @@
 # Jeux en basic sur SPECTRUM
 
-![front](images/screenshot-front.png)
 
-![back](images/screenshot-back.png)
+<div style="display: flex">
+<img src="images/screenshot-front.png" alt="front" width="300">
+<img src="images/screenshot-back.png" alt="back" width="300">
+</div>
+
+* Auteur : Peter Shaw
+* Traduction : Jean-Pierre CANO
+* Copyright : 1983, interface/Virgin Books, 1983, Sybex
+
+## Avant-propos
+
+Les jeux présentés dans ce livre utilisent toutes les possibilités de votre Spectrum : son, couleurs, caractères graphiques définissables par l'utilisateur (ces caractères sont indiqués en REM à la fin de chaque programme). Pour cette raison, ces programmes ne fonctionnent que sur l'ordinateur pour lequel ils ont été conçus et sont difficilement adaptables à des matériels différents.
+
+Au-delà du jeu lui-même, l'étude de ces programmes vous enseignera de nombreuses techniques de programmation particulières à votre Spectrum qui vous seront très utiles pour développer vos propres programmes.
+
+Tous ces jeux fonctionnent avec 16K de mémoire.
+
+## Table de matières
+
+* [Trucs et astuces de programmation](#trucs-et-astuces-de-programmation)
+* Le sauvetage des oeufs
+* Squash
+* Loch Ness
+* [Araignée](#araignée)
+* [Auteuil](#auteuil)
+* Pac Man
+* Trace
+* Casse-Briques
+* Inondation
+* Atterrrissage sur Mars
+* Voleur de pommes
+* La fuite de l'ours
+* Le serpent et les triangles
+* Course à la mort
+* Simon
+* 3D
+* A6
+* [Pendu](#pendu)
+* Briseur de barrages
+
+## Trucs et astuces de programmation
+
+Presque tous les programmes présentés commencent de la façon suivante :
+
+```
+10 REM Nom du programme
+20 GO SUB 9000: REM Caractères graphiques
+30 GO SUB 8000: REM Variables
+40 GO SUB 7000: REM Dessin de l'écran
+```
+
+Outre qu'elle facilite le développement du programme par addition de lignes supplémentaires, cette disposition en accélère l'exécution, ce qui est primordial pour les jeux d'action en temps réel.
+
+### Trucs et astuces
+
+Le Spectrum permet une certain nombre de trucs et astuces de programmation qui ne sont pas présentés de façon évidente dans le manuel d'instruction et qui parfois n'y sont pas même mentionnés. Le symbole dièse (#) peut être utilisé dans les instructions PRINT pour afficher quelque chose en un point quelconque de l'écran :
+
+```
+PRINT #1,"Affichage en bas de l'écran ": PAUSE 0
+```
+
+Vous remarquerez que #1 affiche dans la partie basse de l'écran, permettant l'utilisation de 24 lignes.
+
+Les ordinateurs Sinclair ZX sont probablement les seuls à ne pouvoir exécuter une instruction INPUT qu'en bas de l'écran ; cependant, en utilisant les instructions PRINT AT, il est possible d'obtenir une entrée en un point quelconque de l'écran :
+
+```
+INPUT AT 22,0; AT 0,0;"Quel est votre nom ";LINE a$; AT 10,0;"Quel est votre age ";(a$);" ";a; AT 15,0; "L'age de ";(a$);" est ";a; AT 20,0;"Tapez ENTER pour continuer";b$
+```
+
+Cette méthode présente plusieurs inconvénients. Comme vouz pouvez le constater, la longueur des lignes pose un problème. D'autre part, la couleur du pourtour de l'écran (BORDER) doit être la même que celle du centre (PAPER) car la partie inférieur de l'écran est étendue à la presque totalitéde celui-ci. Presque seulement car une bande reste visible à l'extrémité supérieur, à moins que BORDER et PAPER n'aient la même valeur.
+
+## Araignée
+
+Vous êtes une araignée affamée suspendue à un fil sur la gauche de l'écran, et les six grosses mouches qui entrent dans votre champ de vision sont vos principales proies. Vous avez quatre-vignt-dix-neuf secondes pour manger autant de mouches que possible. Utilisez la touche <6> pour les déplacement vers le haut, et la touche <7> pour les déplacements vers le bas.
+
+* [TAP file](6-SPIDER.TAP)
+* [BASIC file](6-SPIDER.BAS)
+
+## Auteuil
+
+Grâce à ce jeu, vous pouvez posséder un cheval de course sans avoir à le nourrir ni à nettoyer l'écurie. Vous possédez également 50 Francs qui vous permettront de faire fortune en juant aux courses. Cinq joueurs peuvent participer à ce jeu. Le gagnag est celui uqi finit avec la plus grosse somme d'argent. Les cotes sont affichées avant chaque course, et vous pariez sur le cheval de votre choix. Si vous n'avez plus d'argent mais que votre cheval gagne une course, vous recevrez une somme supplémentaire qui vous permettra de jouer dans la course suivante.
+
+* [TAP file](12-AUTEUIL.tap)
+* BASIC file
+
+## Pendu
+
+L'ordinateur affiche sur l'écran un nombre de tirets correspondant au nombre de lettres du mot à trouver. Vous choisissez ensuite une lettre. Si elle est contenue dans le mot recherché, elle s'inscrit à sa place et vous pouvez rejouer. Si cette lettre est mauvaise, l'ordinateur commence à imprimer à l'écran un homme sur le point d'être pendu. Vous avez droit à treize erreurs avant l'issue fatale. Lorsque vous avez choisi une lettre et que vous la tapez, l'ordinateur affiche toutes les occurrence de cette lettre. Dans le mot "carrosse", par exemple, il y a deux r ou les deux s. Comme vous pouvez le remarque en lisant le listing ce programme dispose d'un dictionnaire étendu, ainsi la personne qui tape le programme peut jouer avec sans reconnaître à coup sûr le mot choisi.
+
+* [TAP file](16-HANGUP.TAP)
+* [BASIC file](16-HANGUP.BAS)
