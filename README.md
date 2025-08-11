@@ -45,7 +45,7 @@ Tous ces jeux fonctionnent avec 16K de mémoire.
 
 Presque tous les programmes présentés commencent de la façon suivante :
 
-```
+```basic
 10 REM Nom du programme
 20 GO SUB 9000: REM Caractères graphiques
 30 GO SUB 8000: REM Variables
@@ -58,7 +58,7 @@ Outre qu'elle facilite le développement du programme par addition de lignes sup
 
 Le Spectrum permet une certain nombre de trucs et astuces de programmation qui ne sont pas présentés de façon évidente dans le manuel d'instruction et qui parfois n'y sont pas même mentionnés. Le symbole dièse (#) peut être utilisé dans les instructions PRINT pour afficher quelque chose en un point quelconque de l'écran :
 
-```
+```basic
 PRINT #1,"Affichage en bas de l'écran ": PAUSE 0
 ```
 
@@ -66,7 +66,7 @@ Vous remarquerez que #1 affiche dans la partie basse de l'écran, permettant l'u
 
 Les ordinateurs Sinclair ZX sont probablement les seuls à ne pouvoir exécuter une instruction INPUT qu'en bas de l'écran ; cependant, en utilisant les instructions PRINT AT, il est possible d'obtenir une entrée en un point quelconque de l'écran :
 
-```
+```basic
 INPUT AT 22,0; AT 0,0;"Quel est votre nom ";LINE a$; AT 10,0;"Quel est votre age ";(a$);" ";a; AT 15,0; "L'age de ";(a$);" est ";a; AT 20,0;"Tapez ENTER pour continuer";b$
 ```
 
