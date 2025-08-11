@@ -1,11 +1,6 @@
 # Jeux en basic sur SPECTRUM
 
-<style>
-pre {
-  white-space: pre-wrap;      /* Wrap long lines */
-  word-wrap: break-word;      /* Break long words if needed */
-}
-</style>
+
 
 <div style="display: flex">
 <img src="images/screenshot-front.png" alt="front" width="300">
