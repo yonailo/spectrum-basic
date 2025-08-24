@@ -40,7 +40,7 @@ Tous ces jeux fonctionnent avec 16K de mémoire.
 * 3D
 * A6
 * [Pendu](#pendu)
-* Briseur de barrages
+* [Briseurs de barrages](#briseurs-de-barrages)
 
 ## Trucs et astuces de programmation
 
@@ -96,3 +96,10 @@ L'ordinateur affiche sur l'écran un nombre de tirets correspondant au nombre de
 
 * [TAP file](16-HANGUP.TAP)
 * [BASIC file](16-HANGUP.BAS)
+
+# Briseurs de barrages
+
+Durant votre vol de retour, après une mission sur l'Allemagne, vous avez des problèmes de moteur et vous perdez de l'altitude. Le seul endroit sûr pour vous poser est une rivière. Malheureusement il y a un barrage sur votre chemin et vous devez le faire sauter. Utilisez la touche <0> pour larguer vos bombes.
+
+* [TAP file](10-BARRAGES.TAP)
+* [BASIC file](10-BARRAGES.BAS)
