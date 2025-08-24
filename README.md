@@ -87,8 +87,8 @@ Vous êtes une araignée affamée suspendue à un fil sur la gauche de l'écran,
 
 Grâce à ce jeu, vous pouvez posséder un cheval de course sans avoir à le nourrir ni à nettoyer l'écurie. Vous possédez également 50 Francs qui vous permettront de faire fortune en juant aux courses. Cinq joueurs peuvent participer à ce jeu. Le gagnag est celui uqi finit avec la plus grosse somme d'argent. Les cotes sont affichées avant chaque course, et vous pariez sur le cheval de votre choix. Si vous n'avez plus d'argent mais que votre cheval gagne une course, vous recevrez une somme supplémentaire qui vous permettra de jouer dans la course suivante.
 
-* [TAP file](12-AUTEUIL.tap)
-* BASIC file
+* [TAP file](12-AUTEUIL.TAP)
+* [BASIC file](12-AUTEUIL.BAS)
 
 ## Pendu
 
