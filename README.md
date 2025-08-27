@@ -22,7 +22,7 @@ Tous ces jeux fonctionnent avec 16K de mémoire.
 ## Table de matières
 
 * [Trucs et astuces de programmation](#trucs-et-astuces-de-programmation)
-* Le sauvetage des oeufs
+* [Le sauvetage des oeufs](#le-sauvetage-des-oeufs)
 * Squash
 * Loch Ness
 * [Araignée](#araignée)
@@ -75,6 +75,19 @@ AT 20,0;"Tapez ENTER pour continuer";b$
 ```
 
 Cette méthode présente plusieurs inconvénients. Comme vouz pouvez le constater, la longueur des lignes pose un problème. D'autre part, la couleur du pourtour de l'écran (BORDER) doit être la même que celle du centre (PAPER) car la partie inférieur de l'écran est étendue à la presque totalitéde celui-ci. Presque seulement car une bande reste visible à l'extrémité supérieur, à moins que BORDER et PAPER n'aient la même valeur.
+
+## Le sauvetage des oeufs
+
+Dans ce jeu, vous devez réussir à sauver de pauvres oeufs sans défense en les arrachant aux forces maléfiques qui tentent de vous en empêcher en vous barrant la route avec des rayons lasers. Vous ramassez les oeufs en haut de l'écran. Quand vous transportez un oeuf, votre personnage devient vert. Vous devez éviter les rayons lasers et placer les oeufs en sécurité en passant sur les "-". Lorsque vous avez ramassé une demi-douzaine d'oeufs, vous obtenez cent points et une nouvelle série d'oeufs apparaît.
+
+Ce jeu comporte plusieurs règles :
+1. Si vous heurtez autre chose qu'un "X" ou un "-", vous perdez une vie.
+2. Si vous êtes frappé par un rayon laser, ou si vous perdez une vie de toute autre façon, vous perdez automatiquement l'oeuf que vous transportiez. Si vous n'en transportiez pas, vous ne perdez qu'une vie.
+3. Vous ne pouvez porter qu'un oeuf à la fois. Si vous essayez de ramasser un oeuf alors que vous en portiez déjà un en passant sur un "X", celui-ci disparaîtra, rendant impossible le ramassage ultérieur de l'oeuf.
+4. Au début du jeu, vous avez trois vies. Utilisez les touches de contrôle du curseur pour vous déplacer.
+
+* [TAP file](09-OEUFS.TAP)
+* [BASIC file](09-OEUFS.BAS)
 
 ## Araignée
 
