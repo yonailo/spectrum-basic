@@ -38,7 +38,7 @@ Tous ces jeux fonctionnent avec 16K de mémoire.
 * Course à la mort
 * Simon
 * 3D
-* A6
+* [A6](#a6)
 * [Pendu](#pendu)
 * [Briseurs de barrages](#briseurs-de-barrages)
 
@@ -102,6 +102,13 @@ Grâce à ce jeu, vous pouvez posséder un cheval de course sans avoir à le nou
 
 * [TAP file](12-AUTEUIL.TAP)
 * [BASIC file](12-AUTEUIL.BAS)
+
+## A6
+
+Traverser l'autoroute A6 à l'heure de pointe n'est une partie de plaisir pour personne, mais c'est pourtant le but de ce jeu. Vous devez éviter deux files de voitures roulant en sens inverse ; si vous êtes écrasé par l'une d'elles vous perdez l'une de vos cinq vies. Pour chaque piéton arrivé sain et sauf, vous gagnez dix points. Il y a un record à battre. Utilisez les touches de déplacement du curseur pour contrôler vos mouvements.
+
+* [TAP file](07-A6.TAP)
+* [BASIC file](07-A6.BAS)
 
 ## Pendu
 
