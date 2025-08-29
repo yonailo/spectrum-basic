@@ -27,7 +27,7 @@ Tous ces jeux fonctionnent avec 16K de mémoire.
 * Loch Ness
 * [Araignée](#araignée)
 * [Auteuil](#auteuil)
-* Pac Man
+* [Pac Man](#pac-man)
 * Trace
 * Casse-Briques
 * Inondation
@@ -102,6 +102,19 @@ Grâce à ce jeu, vous pouvez posséder un cheval de course sans avoir à le nou
 
 * [TAP file](12-AUTEUIL.TAP)
 * [BASIC file](12-AUTEUIL.BAS)
+
+## Pac Man
+
+Voici certainement le plus célèbre des jeux vidéo. Cette version présente deux particularités :
+1. Il n'y a qu'un fantôme.
+2. Lorsque vous mangez les pilules d'énergie qui se trouvent dans les coins, vous obtenez un bonus. Mais vous ne pouvez pas manger le fantôme.
+
+Utilisez les touches de déplacement du curseur pour vous déplacer.
+
+Note : Les lignes 7010 et 7020 sont obtenus à l'aide des symboles "." (point) en vidéo inverse et "_" (souligné) en vidéo normale (shift 0).
+
+* [TAP file](01-PACMAN.BAS)
+* [BASIC file](01-PACMAN.TAP)
 
 ## A6
 
