@@ -1,0 +1,46 @@
+  10 REM Casse-Briques
+  20 GO SUB 9000
+  30 GO SUB 8000
+  35 GO SUB 7000
+  40 IF v>=3 THEN  PRINT AT 20,v;"  ëëë  "
+  41 IF v=1 THEN  PRINT AT 20,0;"   ëëë   "
+  42 IF v=-1 THEN  PRINT AT 20,0;"ëëë   "
+  50 LET v=v+2*(INKEY$="8"AND v<27)-2*(INKEY$="5"AND v>0)
+  55 PRINT AT 0,0;"SCORE ";sc: FOR a=1 TO s: NEXT a
+  60 PRINT AT e,f;" "
+  70 LET e=e+c: IF e<2 THEN  LET c=-c: BEEP .008,20
+  80 LET f=f+d: IF f<1OR f>30 THEN  LET d=-d: BEEP .008,10
+  90 IF SCREEN$(e,f)="_" THEN  LET sc=sc+1: LET c=-c: BEEP .008,15
+  95 IF SCREEN$(e,f)="_" THEN  LET compte=compte+1: IF compte=(32*3) THEN  LET compte=0: LET s=s-(s>1): GO TO 35
+ 100 IF SCREEN$(e,f)="" THEN  LET c=-c: BEEP .008,15
+ 110 PRINT AT e,f; INK 6;"ê": IF e>20 THEN  LET b=b+1: GO SUB 1000
+ 115 IF b=10 THEN  GO TO 2000
+ 130 GO TO 40
+ 990 STOP 
+1000 PRINT AT e,f;" "
+1010 LET e=20: LET f=INT (RND*16)+10: LET c=-1
+1020 PRINT AT 0,24;"BALLE ";b
+1030 RETURN 
+2000 PRINT AT 10,12;"TERMINE"
+2010 PRINT ''"           Score : ";sc
+2020 INPUT "Tapez ENTER pour rejouer "; LINE a$: GO TO 30
+7000 PRINT AT 0,0;"SCORE 0";AT 0,24;"BALLE 1": FOR a=1 TO 3
+7010 PRINT ' INVERSE 1;"________________________________"
+7020 NEXT a
+7030 RETURN 
+8000 BORDER 0: PAPER 1: INK 7: CLS 
+8010 LET v=15
+8020 LET c=-1: LET d=1
+8030 LET sc=0
+8040 LET e=20: LET f=INT (RND*15)+10
+8050 LET b=1
+8060 INPUT "Vitesse (1-Rapide 10-Lent)";s
+8070 LET compte=0
+8990 RETURN 
+9000 FOR a=USR "a" TO USR "b"+7
+9010 READ user: POKE a,user
+9020 NEXT a: RETURN 
+9030 DATA 60,126,255,255,255,255,126,60
+9040 DATA 0,0,0,0,0,0,255,255
+9990 REM a b
+9991 REM ê ë

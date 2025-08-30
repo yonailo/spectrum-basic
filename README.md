@@ -29,14 +29,14 @@ Tous ces jeux fonctionnent avec 16K de mémoire.
 * [Auteuil](#auteuil)
 * [Pac Man](#pac-man)
 * Trace
-* Casse-Briques
+* [Casse-Briques](#casse-briques)
 * Inondation
 * Atterrrissage sur Mars
 * Voleur de pommes
 * La fuite de l'ours
 * Le serpent et les triangles
 * Course à la mort
-* Simon
+* [Simon](#simon)
 * 3D
 * [A6](#a6)
 * [Pendu](#pendu)
@@ -113,8 +113,22 @@ Utilisez les touches de déplacement du curseur pour vous déplacer.
 
 Note : Les lignes 7010 et 7020 sont obtenus à l'aide des symboles "." (point) en vidéo inverse et "_" (souligné) en vidéo normale (shift 0).
 
-* [TAP file](01-PACMAN.BAS)
-* [BASIC file](01-PACMAN.TAP)
+* [TAP file](01-PACMAN.TAP)
+* [BASIC file](01-PACMAN.BAS)
+
+## Casse-Briques
+
+Ce jeu est une version du célèbre casse-brique. Le but du jeu est de gagner des points en cassant les briques d'un mur à l'aide d'une balle que vous renvoyez en la frappant avec votre raquette. Vous disposez de dix balles. Le jeu se termine lorsque dix balles ont été utilisées. La touche <5> permet de déplacer la raquette vers la gauche et la touche <8> vers la droite. Vous pouvez également choisir la vitesse de la balle : de 1 (rapide) à dix (lent).
+
+* [TAP file](17-ARKANOID.TAP)
+* [BASIC file](17-ARKANOID.BAS)
+
+## Simon
+
+l'ordinateur choisit une série de couleurs correspondant à des sons et vous devez retrouver la série exacte. Il y a quatre couleurs distinctes. La série débute avec une couleur choisie au hasard ; à chaque fois qu'elle est répétée, une autre couleur est ajoutée. La longueur de la série varie de un à dix.
+
+* [TAP file](18-SIMON.TAP)
+* [BASIC file](18-SIMON.BAS)
 
 ## A6
 
