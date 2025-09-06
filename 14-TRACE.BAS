@@ -1,0 +1,59 @@
+  10 REM ***TRACE***
+  30 GO SUB 8000
+  40 LET a$=INKEY$
+  50 IF a$>"8"OR a$<"5" THEN  GO TO 70
+  60 LET m=VAL a$: LET j=0
+  70 LET h1=h1+(m=6)-(m=7)
+  80 LET h2=h2+(m=8)-(m=5)
+  90 LET b$=SCREEN$(h1,h2)
+ 100 BEEP .005,10
+ 110 IF b$="_" THEN  GO SUB 2000
+ 120 LET j=1: PRINT AT h1,h2; INVERSE 1;"_"
+ 130 PRINT AT h1,h2; INVERSE 1; INK 6;"_"
+ 140 LET u=0
+ 150 IF u=5 THEN  GO SUB 1000
+ 160 LET c3=c1: LET c4=c2
+ 170 LET c1=c1+(n=6)-(n=7)
+ 180 LET c2=c2+(n=8)-(n=5)
+ 190 LET c$=SCREEN$(c1,c2)
+ 200 IF c$="_" THEN  LET n=u+5: LET c1=c3: LET c2=c4: LET u=u+1: GO TO 150
+ 220 PRINT AT c1,c2; INVERSE 1;"_"
+ 240 GO TO 40
+1000 PRINT AT c1,c2; FLASH 1;"_"
+1010 LET hs=hs+1: FOR p=1 TO 30: BEEP .008,p: NEXT p
+1020 PRINT AT 0,0;"SCORE ORDINATEUR ";cs;"   JOUEUR  ";hs
+1030 PRINT  INVERSE 1;"________________________________"
+1040 FOR l=1 TO 19
+1050 PRINT  INVERSE 1;"_"; INVERSE 0;"                              "; INVERSE 1;"_"
+1060 NEXT l
+1070 PRINT  INVERSE 1;"________________________________"
+1080 LET c1=10: LET c2=10
+1090 LET h1=10: LET h2=10
+1100 IF hs=10 THEN  GO TO 3000
+1110 RETURN 
+2000 PRINT AT h1,h2; FLASH 1;"_"
+2010 LET cs=cs+1: FOR p=1 TO 30: BEEP .008,p: NEXT p
+2020 PRINT AT 0,0;"SCORE ORDINATEUR ";cs;"    JOUEUR ";hs
+2030 PRINT  INVERSE 1;"________________________________"
+2040 FOR l=1 TO 19
+2050 PRINT  INVERSE 1;"_"; INVERSE 0;"                              "; INVERSE 1;"_"
+2060 NEXT l
+2070 PRINT  INVERSE 1;"________________________________"
+2080 LET c1=10: LET c2=10
+2090 LET h1=10: LET h2=10
+2100 IF cs=10 THEN  GO TO 3000
+2110 RETURN 
+3000 PRINT AT 5,8;("L'ORDINATEUR "AND cs>hs)+("LE JOUEUR "AND hs>cs);" GAGNE!!"
+3010 INPUT "Tapez ENTER pour rejouer "; LINE a$
+8000 LET j=1: LET c1=10: LET c2=10
+8010 LET h1=10: LET h2=20
+8020 LET hs=0: LET cs=0
+8030 BORDER 0: PAPER INT (RND*6): INK 9: CLS 
+8040 PRINT "SCORE ";
+8050 PRINT "ORDINATEUR 00  JOUEUR 00"
+8060 PRINT  INVERSE 1;"________________________________"
+8070 FOR l=1 TO 19
+8080 PRINT  INVERSE 1;"_";TAB 31; INVERSE 1;"_"
+8090 NEXT l
+8100 PRINT  INVERSE 1;"________________________________"
+8110 LET m=5: LET n=8: RETURN 

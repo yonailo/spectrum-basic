@@ -24,11 +24,11 @@ Tous ces jeux fonctionnent avec 16K de mémoire.
 * [Trucs et astuces de programmation](#trucs-et-astuces-de-programmation)
 * [Le sauvetage des oeufs](#le-sauvetage-des-oeufs)
 * Squash
-* Loch Ness
+* [Loch Ness](#loch-ness)
 * [Araignée](#araignée)
 * [Auteuil](#auteuil)
 * [Pac Man](#pac-man)
-* Trace
+* [Trace](#trace)
 * [Casse-Briques](#casse-briques)
 * Inondation
 * Atterrrissage sur Mars
@@ -76,6 +76,13 @@ AT 20,0;"Tapez ENTER pour continuer";b$
 
 Cette méthode présente plusieurs inconvénients. Comme vouz pouvez le constater, la longueur des lignes pose un problème. D'autre part, la couleur du pourtour de l'écran (BORDER) doit être la même que celle du centre (PAPER) car la partie inférieur de l'écran est étendue à la presque totalitéde celui-ci. Presque seulement car une bande reste visible à l'extrémité supérieur, à moins que BORDER et PAPER n'aient la même valeur.
 
+## Loch Ness
+
+Ce jeu est une variation du tir aux canards dans lequel les cibles traversent l'écran au-dessus de vous. Votre score augmente à chaque fois que vous atteignez une cible. Si vous réussissez à abattre une ligne complète de cibles, vous bénéficierez d'un bonus de 100 ou 200 points. Utilisez la touche <5> pour aller à gauche, la touche <8> pour aller à droite et la touche <0> pour tirer.
+
+* [TAP file ](02-LOCHNESS.TAP)
+* [BASIC file](02-LOCHNESS.BAS)
+
 ## Le sauvetage des oeufs
 
 Dans ce jeu, vous devez réussir à sauver de pauvres oeufs sans défense en les arrachant aux forces maléfiques qui tentent de vous en empêcher en vous barrant la route avec des rayons lasers. Vous ramassez les oeufs en haut de l'écran. Quand vous transportez un oeuf, votre personnage devient vert. Vous devez éviter les rayons lasers et placer les oeufs en sécurité en passant sur les "-". Lorsque vous avez ramassé une demi-douzaine d'oeufs, vous obtenez cent points et une nouvelle série d'oeufs apparaît.
@@ -115,6 +122,13 @@ Note : Les lignes 7010 et 7020 sont obtenus à l'aide des symboles "." (point) e
 
 * [TAP file](01-PACMAN.TAP)
 * [BASIC file](01-PACMAN.BAS)
+
+## Trace 
+
+Dans ce jeu, vous jouez contre l'ordinateur. Vous vous déplacez à l'intérieur de l'écran en laissant derrière vous une trace. Si vous touchez la trace de l'ordinateur ou le côté de l'écran, ou si vous coupez votre propre trace l'ordinateur marque un point. L'ordinateur est très fort mais pas imbattable. Utilisez les touches de déplacement du curseur pour contrôler vos mouvements.
+
+* [TAP file](14-TRACE.TAP)
+* [BASIC file](14-TRACE.BAS)
 
 ## Casse-Briques
 
