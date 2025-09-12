@@ -31,7 +31,7 @@ Tous ces jeux fonctionnent avec 16K de mémoire.
 * [Trace](#trace)
 * [Casse-Briques](#casse-briques)
 * Inondation
-* Atterrrissage sur Mars
+* [Atterrrissage sur Mars](#atterrissage-sur-mars)
 * Voleur de pommes
 * La fuite de l'ours
 * Le serpent et les triangles
