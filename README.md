@@ -100,8 +100,8 @@ Ce jeu comporte plusieurs règles :
 
 Vous êtes une araignée affamée suspendue à un fil sur la gauche de l'écran, et les six grosses mouches qui entrent dans votre champ de vision sont vos principales proies. Vous avez quatre-vignt-dix-neuf secondes pour manger autant de mouches que possible. Utilisez la touche <6> pour les déplacement vers le haut, et la touche <7> pour les déplacements vers le bas.
 
-* [TAP file](6-SPIDER.TAP)
-* [BASIC file](6-SPIDER.BAS)
+* [TAP file](06-SPIDER.TAP)
+* [BASIC file](06-SPIDER.BAS)
 
 ## Auteuil
 
@@ -136,6 +136,13 @@ Ce jeu est une version du célèbre casse-brique. Le but du jeu est de gagner de
 
 * [TAP file](17-ARKANOID.TAP)
 * [BASIC file](17-ARKANOID.BAS)
+
+## Atterrissage sur Mars
+
+Réussirez-vous à poser votre vaisseau spatial sur l'aire d'atterrissage ? Le passage est étroit et il faut d'excellents réflexes et des nerfs d'acier pour se poser sans casse. Après le premier atterrissage réussi, vous piloterez un vaisseau plus rapide. Soyez prudent ou vous risquez de rester définitivement sur Mars. Utilisez la touche <5> pour vous déplacer vers la gauche et la touche <8> pour vous déplacer vers la droite.
+
+* [TAP file](03-MARS.TAP)
+* [BASIC file](03-MARS.BAS)
 
 ## Simon
 
