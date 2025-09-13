@@ -32,7 +32,7 @@ Tous ces jeux fonctionnent avec 16K de mémoire.
 * [Casse-Briques](#casse-briques)
 * [Inondation](#inondation)
 * [Atterrrissage sur Mars](#atterrissage-sur-mars)
-* Voleur de pommes
+* [Voleur de pommes](#voleur-de-pommes)
 * La fuite de l'ours
 * Le serpent et les triangles
 * Course à la mort
@@ -150,6 +150,13 @@ Réussirez-vous à poser votre vaisseau spatial sur l'aire d'atterrissage ? Le p
 
 * [TAP file](03-MARS.TAP)
 * [BASIC file](03-MARS.BAS)
+
+## Voleur de pommes
+
+Prenez le plus de pommes possibles dans le verger avant l'arrivée du fermier qui annoncera la fin du jeu. Pour chaque pomme mangée vous gagnez trois points et si par bonheur vous réussissez à manger cinquante pommes en trente secondes vous obtiendrez un bonus.
+
+* [TAP file](11-POMMES.TAP)
+* [BASIC file](11-POMMES.BAS)
 
 ## Simon
 
