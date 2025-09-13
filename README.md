@@ -23,7 +23,7 @@ Tous ces jeux fonctionnent avec 16K de mémoire.
 
 * [Trucs et astuces de programmation](#trucs-et-astuces-de-programmation)
 * [Le sauvetage des oeufs](#le-sauvetage-des-oeufs)
-* Squash
+* [Squash](#squash)
 * [Loch Ness](#loch-ness)
 * [Araignée](#araignée)
 * [Auteuil](#auteuil)
@@ -33,11 +33,11 @@ Tous ces jeux fonctionnent avec 16K de mémoire.
 * [Inondation](#inondation)
 * [Atterrrissage sur Mars](#atterrissage-sur-mars)
 * [Voleur de pommes](#voleur-de-pommes)
-* La fuite de l'ours
+* [La fuite de l'ours](#la-fuite-de-lours)
 * Le serpent et les triangles
 * Course à la mort
 * [Simon](#simon)
-* 3D
+* [3D](#3d)
 * [A6](#a6)
 * [Pendu](#pendu)
 * [Briseurs de barrages](#briseurs-de-barrages)
@@ -95,6 +95,13 @@ Ce jeu comporte plusieurs règles :
 
 * [TAP file](09-OEUFS.TAP)
 * [BASIC file](09-OEUFS.BAS)
+
+## Squash
+
+Dans ce jeu, vous devez arriver à faire rebondir la balle tout autour de l'écran. Vous marquez des points lorsque vous réussissez à frapper la balle avec votre raquette (le carré en bas de l'écran). Si jamais la balle touche le carré sur un de ses côtés verticaux, vous perdez une vie. Au début du jeu, vous avez trois vies. Utilisez la touche <5> pour les déplacements à gauche et la touche <8> pour les déplacements à droite.
+
+* [TAP file](19-SQUASH.TAP)
+* [BASIC file](19-SQUASH.BAS)
 
 ## Araignée
 
@@ -158,12 +165,40 @@ Prenez le plus de pommes possibles dans le verger avant l'arrivée du fermier qu
 * [TAP file](11-POMMES.TAP)
 * [BASIC file](11-POMMES.BAS)
 
+## La fuite de l'ours
+
+Teddy veut traverser l'écran mais malheureusement unse batterie de rayons lasers tente de l'en empêcher. Si vous pouver les éviter, Teddy sera sauvé. Vous gagnez trois points à chaque fois que Teddy est ramené sain et sauf à la maison. Vous commencez à jouer avec cinq Teddy. Utilisez les touches de contrôle du curseur pour vous déplacer.
+
+* [TAP file](13-OURS.TAP)
+* [BASIC file](13-OURS.BAS)
+
+## Le serpent et les triangles
+
+Vous êtes un serpent et vous vous déplacez en ondulant vers le bas de l'écran. Soudain des triangles bleus remplis de poison arrivent vers vous. Vous devez les éviter à tout prix. Dès que l'un d'eux vous touche le jeu est terminé. Vous vous déplacez automatiquement vers la gauche, aussi il faut utiliser la touche <8> pour vous déplacer vers la droite.
+
+* [TAP file]()
+* [BASIC file]()
+
+## Course à la mort
+
+Le but de ce jeu est d'écraser autant de piétons que possible. Vous gagnez des points à chaque piéton écrasé. Lorsque vous touchez votre cible, une tombe apparaît à l'écran. Vous disposez d'un maximum de soixante secondes, aussi ne perdez pas de temps. Utilisez les touches de déplacement du curseur pour contrôler votre auto.
+
+* [TAP file]()
+* [BASIC file]()
+
 ## Simon
 
 l'ordinateur choisit une série de couleurs correspondant à des sons et vous devez retrouver la série exacte. Il y a quatre couleurs distinctes. La série débute avec une couleur choisie au hasard ; à chaque fois qu'elle est répétée, une autre couleur est ajoutée. La longueur de la série varie de un à dix.
 
 * [TAP file](18-SIMON.TAP)
 * [BASIC file](18-SIMON.BAS)
+
+## 3D
+
+Ce jeu est une variation du jeu de conduite bien connu. Vous voyez votre automobile en trois dimensions et la route en perspective. La route défile devant vos yeux et vous devez éviter de sortir sur les bas côtés. Utilisez les touches <5> et <8> pour contröler votre auto.
+
+* [TAP file](05-3D.TAP)
+* [BASIC file](05-3D.BAS)
 
 ## A6
 
