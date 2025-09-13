@@ -30,7 +30,7 @@ Tous ces jeux fonctionnent avec 16K de mémoire.
 * [Pac Man](#pac-man)
 * [Trace](#trace)
 * [Casse-Briques](#casse-briques)
-* Inondation
+* [Inondation](#inondation)
 * [Atterrrissage sur Mars](#atterrissage-sur-mars)
 * Voleur de pommes
 * La fuite de l'ours
@@ -136,6 +136,13 @@ Ce jeu est une version du célèbre casse-brique. Le but du jeu est de gagner de
 
 * [TAP file](17-ARKANOID.TAP)
 * [BASIC file](17-ARKANOID.BAS)
+
+## Inondation
+
+Le toit fuit et vous n'avez qu'un seau. Essayez d'attraper les gouttes en déplaánt le seau à l'aide des touches <5> et <8>. Il tombera trentre gouttes. Essayez d'en attraper le plus possible afin de ne pas avoir à appeler les pompiers.
+
+* [TAP file](04-INONDATION.TAP)
+* [BASIC file](04-INONDATION.BAS)
 
 ## Atterrissage sur Mars
 
